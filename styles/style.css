@@ -103,6 +103,7 @@ nav h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .banner-content {
@@ -168,6 +169,16 @@ nav h1 {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    position: absolute;
+    top: 56%;
+    left: 57%;
+}
+
+.c2 {
+    position: absolute;
+    top: 30%;
+    right: 13%;
+    text-align: center;
 }
 
 .card-round {
@@ -438,4 +449,47 @@ td {
     text-align: start;
     margin: 0px;
     color: #ffffff80;
+}
+
+/* footer styles */
+footer {
+    border: 1px dashed #33ff00;
+    width: 100%;
+    margin: 3rem auto;
+    margin-bottom: 0rem;
+    background-color: #222222;
+    color: #ffffff80;
+    text-align: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 0.75fr 0.75fr;
+    place-items: center;
+    margin: 2rem 2rem;
+    padding: 2rem 2rem;
+    text-align: start;
+}
+
+.footer-container h1 {
+    font-size: 3rem;
+    margin: 1rem auto;
+    color: #E6533C;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #ffffff80;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.footer-container h3 {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    color: #FFFFFF;
+}
+
+hr {
+    width: 80%;
 }
