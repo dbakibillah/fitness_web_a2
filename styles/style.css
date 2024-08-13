@@ -36,8 +36,11 @@ body {
     font-weight: 400;
 }
 
+.primary-btn:hover {
+    cursor: pointer;
+}
+
 header {
-    /* border: 1px dashed #00f7ff; */
     width: 100%;
     background: linear-gradient(180.00deg, rgb(29, 29, 29), rgba(226, 226, 226, 0) 100%);
 }
@@ -192,7 +195,6 @@ nav h1 {
 
 /* change your habit section */
 .change-your-habit {
-    /* border: 1px dashed #FFFFFF; */
     width: 70%;
     margin: 0 auto;
     margin-top: 50px;
@@ -212,7 +214,6 @@ nav h1 {
 }
 
 .habits-card-container {
-    /* border: 1px dashed #33ff00; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
@@ -220,7 +221,6 @@ nav h1 {
 }
 
 .habits-card {
-    /* border: 1px dashed #00f7ff; */
     width: 235px;
     text-align: center;
 }
@@ -241,22 +241,20 @@ nav h1 {
 
 /* run section styles */
 .run-section {
-    /* border: 1px dashed #00f7ff; */
     width: 65%;
     margin: 0 auto;
     margin-top: 50px;
     background-color: #222222;
     border-radius: 18px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
-
 }
 
 .run-content {
-    /* border: 1px dashed #33ff00; */
     width: 35%;
+    padding: 3rem
 }
 
 .run-content h1 {
@@ -282,12 +280,8 @@ nav h1 {
     border-radius: 18px;
 }
 
-/* training and exercise section styles */
-
-
 /* BMI Calculator styles */
 .bmi-calculator {
-    /* border: 1px dashed #33ff00; */
     width: 100%;
     margin: 3rem auto;
     padding: 2rem 0;
@@ -298,7 +292,6 @@ nav h1 {
 }
 
 .bmi-texts {
-    /* border: 1px dashed #00f7ff; */
     width: 45%;
     margin: 2rem auto;
     padding: 2rem;
@@ -317,7 +310,6 @@ nav h1 {
 }
 
 .bmi-chart {
-    /* border: 1px dashed #33ff00; */
     width: 30%;
     margin: 0 auto;
     margin-top: 50px;
@@ -330,7 +322,6 @@ nav h1 {
 }
 
 .bmi-table {
-    /* border: 1px dashed #33ff00; */
     border-collapse: collapse;
     width: 50%;
     margin: 3rem auto;
@@ -346,7 +337,6 @@ td {
 }
 
 .bmi-form {
-    /* border: 1px dashed #33ff00; */
     width: 38%;
     margin: 0 auto;
     margin-top: 50px;
@@ -398,7 +388,6 @@ td {
 
 /* meet out team section styles */
 .meet-out-team {
-    /* border: 1px dashed #33ff00; */
     width: 65%;
     margin: 3rem auto;
     padding: 2rem;
@@ -467,15 +456,104 @@ td {
     color: #ffffff80;
 }
 
+/* pricing section styles */
+.pricing-section {
+    width: 65%;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.pricing-description {
+    text-align: center;
+}
+
+.pricing-description h5 {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    color: #E6533C;
+    text-decoration: underline;
+}
+
+.pricing-description h2 {
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    border-radius: 18px;
+}
+
+.pricing-card {
+    width: 330px;
+    height: 400px;
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111111;
+    border-radius: 18px;
+    transition: all 1s;
+}
+
+.pricing-card:hover {
+    background-color: #d6d6d6;
+    color: #000000;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.pricing-card:hover ul li {
+    color: #000000;
+    font-weight: 500;
+}
+
+
+.pricing-card h4 {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pricing-card h5 {
+    font-size: 2rem;
+    margin: 0.5rem auto;
+    text-align: center;
+    color: #E6533C;
+}
+
+.pricing-card ul {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #ffffff50;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-card ul li {
+    margin: 0.8rem 0;
+}
+
+.pricing-card button {
+    margin: 1rem auto;
+}
+
 /* footer styles */
 footer {
-    /* border: 1px dashed #33ff00; */
     width: 100%;
     margin: 3rem auto;
     margin-bottom: 0rem;
     background-color: #222222;
     color: #ffffff80;
     text-align: center;
+    padding-bottom: 0.4rem;
 }
 
 .footer-container {
@@ -617,6 +695,12 @@ hr {
 
     .run-img {
         width: 80%;
+        margin-top: 0rem;
+    }
+
+    .run-section button {
+        margin: 0 auto;
+        width: 100%;
     }
 
     /* BMI Calculator styles */
@@ -677,6 +761,34 @@ hr {
 
     .team-card {
         width: 90%;
+    }
+
+    /* pricing section styles */
+    .pricing-section {
+        width: 90%;
+        margin: 5rem 0;
+        padding: 0;
+    }
+
+    .pricing-description {
+        width: 90%;
+        margin: 0.5rem auto;
+    }
+
+    .pricing-description h5 {
+        font-size: 1rem;
+    }
+
+    .pricing-description h2 {
+        font-size: 2rem;
+    }
+
+    .pricing-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing-card {
+        margin: 0.5rem 0;
     }
 
     /* footer section styles */
